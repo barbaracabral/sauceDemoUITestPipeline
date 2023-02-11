@@ -1,4 +1,4 @@
-name: Cypress Tests update
+name: Cypress Tests
 
 on:
   push:
