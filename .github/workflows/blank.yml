@@ -1,7 +1,7 @@
 name: Cypress Tests
 
 on:
-  pull-request:
+  push:
     types: [ready_for_review, opened, reopened, synchronize]
 
 jobs:
