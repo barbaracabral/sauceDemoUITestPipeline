@@ -1,2 +1,13 @@
-# sauceDemoUITestPipeline
-Sauce Demo UI Tests running on Pipeline using Docker
+# sauceDemoUITest
+sauce Demo UI Testing Repo
+
+# Node: 
+https://nodejs.org/en/download/  
+
+# Instalar
+```
+npm install cypress --save-dev
+```
+
+# Aplicação de Base:
+https://www.saucedemo.com/ 
