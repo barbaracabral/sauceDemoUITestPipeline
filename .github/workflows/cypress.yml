@@ -13,7 +13,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v4
         with:
-           start: npx cypress run
+           start: npx cypress run --record --key env.CYPRESS_RECORD_KEY
            wait-on: 'https://www.saucedemo.com'
            browser: chrome
            record: true
