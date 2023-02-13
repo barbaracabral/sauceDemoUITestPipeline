@@ -15,7 +15,4 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           browser: chrome
-      - name: Print Cypress Cloud URL
-        run: |
-          echo Cypress finished with: ${{ steps.cypress.outcome }}
-          echo See results at ${{ steps.cypress.outputs.dashboardUrl }}
+
