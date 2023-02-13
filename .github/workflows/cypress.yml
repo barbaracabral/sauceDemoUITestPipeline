@@ -14,9 +14,9 @@ jobs:
         id: cypress
         uses: cypress-io/github-action@v4
         with:
-           start: npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }}
-           wait-on: 'https://www.saucedemo.com'
-           browser: chrome
+          start: npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }}
+          wait-on: 'https://www.saucedemo.com'
+          browser: chrome
           record: true
         env:
           # pass the Cypress Cloud record key as an environment variable
