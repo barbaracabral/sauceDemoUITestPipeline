@@ -7,8 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false # https://github.com/cypress-io/github-action/issues/48
-      matrix:
-        containers: [1, 2] # Uses 2 parallel instances
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -16,10 +14,9 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
            start: npm start
-           wait-on: 'http://localhost:3000'
+           wait-on: 'https://www.saucedemo.com'
            browser: chrome
            record: true
-           parallel: true
         env:
           # pass the Cypress Cloud record key as an environment variable
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
