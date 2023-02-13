@@ -1,16 +1,14 @@
 name: Cypress Tests Run on Pipeline
 
-on:
-  push:
-    types: [ready_for_review, opened, reopened, synchronize]
+on: [push]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  cypress-run:
+    runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
-      - name: Run Cypress Test
-        uses: cypress-io/github-action@v4
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Cypress run
+        uses: cypress-io/github-action@v5
         with:
-           command: npx cypress run
            browser: chrome
