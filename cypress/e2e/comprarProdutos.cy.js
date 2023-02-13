@@ -1,4 +1,4 @@
-describe('Login no Sauce Labs', () => {
+describe('Comprar produtos no Sauce Labs', () => {
   beforeEach(() => {
     cy.restoreLocalStorage();
     Cypress.Cookies.preserveOnce('session_id', 'session-username');
