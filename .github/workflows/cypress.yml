@@ -14,7 +14,6 @@ jobs:
         id: cypress
         uses: cypress-io/github-action@v4
         with:
-          start: npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }}
           browser: chrome
           record: true
         env:
